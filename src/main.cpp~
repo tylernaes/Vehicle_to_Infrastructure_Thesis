@@ -1,0 +1,16 @@
+#include <main.h>
+
+int main (int argc, char** argv)
+{
+	ros::init(argc, argv, "main_node");
+	Main main;
+	//main.roads_on();
+
+	while(ros::ok())
+	{
+		ros::spin();
+		//ros::Duration(10).sleep();//sleep to make sure arduino get full message
+	}
+	ros::shutdown();		
+	return 0;
+}   
